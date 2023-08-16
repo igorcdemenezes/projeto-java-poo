@@ -24,7 +24,7 @@ public class ContaPoupanca extends ContaCorrente {
 	@Override
 	public void creditar(double valor) {
 
-		super.creditar(super.getSaldo() + valor * (1 + percentualBonus / 100));
+		super.creditar(valor * (1 + percentualBonus / 100));
 	}
 
 	@Override
